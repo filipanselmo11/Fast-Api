@@ -4,7 +4,9 @@ from typing import Optional, List
 class Usuario(BaseModel):
     id: Optional[int] = None
     nome: str
-    telefone: str
+    email: str
+    senha: str
+    github: str
 
     class Config:
         orm_model = True

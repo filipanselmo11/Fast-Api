@@ -1,5 +1,6 @@
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import Optional
+
 
 class Usuario(BaseModel):
     id: Optional[int] = None
@@ -7,6 +8,14 @@ class Usuario(BaseModel):
     email: str
     senha: str
     github: str
+
+    class Config:
+        orm_model = True
+
+
+class Tecnologia(BaseModel):
+    id: Optional[int] = None
+    nome: str
 
     class Config:
         orm_model = True

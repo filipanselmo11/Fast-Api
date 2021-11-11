@@ -6,6 +6,7 @@ from src.schemas.schemas import Usuario
 from src.repositorios.usuario import RepositorioUsuario
 
 
+
 app = FastAPI()
 
 
